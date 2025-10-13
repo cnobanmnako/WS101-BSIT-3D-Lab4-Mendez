@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Todo App with Due Date</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Todo App</h1>
+
+    <form id="task-form">
+      <div class="inputs">
+        <input id="task-input" type="text" placeholder="Add a new task..." autocomplete="off" required />
+        <input id="date-input" type="date" min="2000-01-01" max="2028-12-31" required />
+      </div>
+      <button type="submit" class="add-btn">Add</button>
+    </form>
+
+    <ul id="task-list" class="task-list"></ul>
+
+    <div class="footer">
+      <span id="count">0 tasks</span>
+      <button id="clear-completed" class="secondary">Clear completed</button>
+      <button id="clear-all" class="secondary">Clear all</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
